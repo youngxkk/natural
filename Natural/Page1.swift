@@ -10,52 +10,11 @@ import UIKit
 import AVFoundation
 
 
-func playSound(audioName: String, isAlert: Bool , playFinish: (()->())?) {
-    
-    // 一. 获取 SystemSoundID
-    //   参数1: 文件路径
-    //   参数2: SystemSoundID, 指针
-    guard let url = Bundle.main.url(forResource: "beach.mp3", withExtension: nil) else {
-        print("没有找到音频路径")
-        return
-    }
-    let urlCF = url as CFURL
-    
-    var systemSoundID: SystemSoundID = 0
-    AudioServicesCreateSystemSoundID(urlCF, &systemSoundID)
-    
-    // 二. 播放器相关
-    
-    // 判断是否振动
-    if isAlert {
-        // 1. 带振动播放, 可以监听播放完成(模拟器不行)
-        AudioServicesPlayAlertSoundWithCompletion(systemSoundID)
-        {
-            print("带振动播放完成")
-            // 三. 释放资源
-            AudioServicesDisposeSystemSoundID(systemSoundID)
-            
-            // 四. 执行回调
-            if playFinish != nil { playFinish!()}
-        }
-    }else {
-        // 2. 不带振动播放, 可以监听播放完成
-        AudioServicesPlaySystemSoundWithCompletion(systemSoundID) {
-            
-            print("播放完成")
-            // 三. 释放资源
-            AudioServicesDisposeSystemSoundID(systemSoundID)
-            
-            // 四. 执行回调
-            if playFinish != nil { playFinish!()}
-        }
-    }
-}
-
-
-
-
 class Page1: UIViewController {
+    
+    //播放按钮
+    @IBOutlet weak var playBtn: UIButton!
+    
     
     //下面与播放器相关
     var playerItem:AVPlayerItem?
@@ -66,8 +25,9 @@ class Page1: UIViewController {
         
         
         //初始化播放器
-        let url = URL(string: "beach.mp3")
-        playerItem = AVPlayerItem(url: url!)
+        let soundFile = Bundle.main.path(forResource: "spring_rain", ofType: "mp3")
+        let url = URL(fileURLWithPath: soundFile!)
+        playerItem = AVPlayerItem(url: url)
         player = AVPlayer(playerItem: playerItem!)
         
         
@@ -75,11 +35,11 @@ class Page1: UIViewController {
         let img = UIImage(named: "pic_beach")
         let imgView = UIImageView(image: img)
         self.view.addSubview(imgView)
-        
         view.backgroundColor = UIColor.cyan
         
-        //下面是这个界面的文本相关
-        let textLabel = UILabel(frame: CGRect(x: 0, y: 520, width: self.view.frame.width, height: 50))
+        //下面是这个界面的文本相关 
+        let textLabel = UILabel.init()
+        textLabel.frame = CGRect(x: 0, y: 540, width: self.view.frame.width, height: 50)
         textLabel.textAlignment = NSTextAlignment.center
         textLabel.font = UIFont.boldSystemFont(ofSize: 30)
         textLabel.textColor = UIColor.white
@@ -89,30 +49,50 @@ class Page1: UIViewController {
         
         //下面是这个界面的按钮相关
         let playBtn = UIButton()
-        playBtn.frame = CGRect(x: 100, y: 200, width: 100, height: 40)
-        playBtn.setTitle("play", for: .normal)
-        playBtn.backgroundColor = UIColor.black
+        playBtn.frame = CGRect(x: 112, y: 360, width: 150, height: 50)
+        playBtn.layer.cornerRadius = 8
+        playBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.center
+        playBtn.titleLabel?.font = UIFont.systemFont(ofSize:30)
+        playBtn.setTitle("Play", for: .normal)
+        playBtn.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
         playBtn.addTarget(self, action: #selector(tappedPlay(_:)), for: .touchUpInside)
         self.view.addSubview(playBtn)
         
-        
+
         // Do any additional setup after loading the view.
     }
 
-    @objc func tappedPlay(_ playBtn: UIButton){
+    @IBAction func tappedPlay(_ sender: Any) {
         print("play233")
-        //根据rate属性判断当天是否在播放
-        if player?.rate == 0 {
-            player!.play()
-            playBtn.setTitle("暂停", for: .normal)
+        //根据rate属性判断当时是否在播放
+
+        if player!.rate == 0.0 {
+           player!.play()
+//           playBtn.setTitle("pause", for: .normal)
         } else {
-            player!.pause()
-            playBtn.setTitle("播放", for: .normal)
+           player!.pause()
+//           playBtn.setTitle("Play", for: .normal)
         }
-//        player!.play()
-//        playSound(audioName: "beach.mp3", isAlert: true, playFinish: nil)
     }
 
+    
+    //页面显示时添加歌曲播放结束通知监听
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(finishedPlaying),
+            name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerItem)
+    }
+    
+    //页面消失时取消歌曲播放结束通知监听
+    override func viewWillDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    //歌曲播放完毕
+    @objc func finishedPlaying(myNotification:NSNotification) {
+        print("播放完毕!")
+        let stopedPlayerItem: AVPlayerItem = myNotification.object as! AVPlayerItem
+        stopedPlayerItem.seek(to: kCMTimeZero)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

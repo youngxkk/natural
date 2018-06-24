@@ -18,7 +18,7 @@ class Page2: UIViewController {
         self.view.addSubview(imgView)
 //        view.backgroundColor = UIColor.yellow
         
-        let textLabel = UILabel(frame: CGRect(x: 0, y: 520, width: self.view.frame.width, height: 50))
+        let textLabel = UILabel(frame: CGRect(x: 0, y: 540, width: self.view.frame.width, height: 50))
         
         textLabel.text = "Summer night"
         textLabel.font = UIFont.systemFont(ofSize: 30)

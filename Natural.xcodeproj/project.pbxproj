@@ -22,6 +22,7 @@
 		93AC9AB120DE559000FCA562 /* stove_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 93AC9AAB20DE559000FCA562 /* stove_fire.mp3 */; };
 		93AC9AB220DE559000FCA562 /* summer_night.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 93AC9AAC20DE559000FCA562 /* summer_night.mp3 */; };
 		93AC9AB320DE559000FCA562 /* forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 93AC9AAD20DE559000FCA562 /* forest.mp3 */; };
+		93EE47F120DFCBD6007E0593 /* PublicControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE47F020DFCBD6007E0593 /* PublicControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		93AC9AAB20DE559000FCA562 /* stove_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = stove_fire.mp3; path = "../../../../Downloads/MIUI白噪音素材提取/stove_fire.mp3"; sourceTree = "<group>"; };
 		93AC9AAC20DE559000FCA562 /* summer_night.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = summer_night.mp3; path = "../../../../Downloads/MIUI白噪音素材提取/summer_night.mp3"; sourceTree = "<group>"; };
 		93AC9AAD20DE559000FCA562 /* forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = forest.mp3; path = "../../../../Downloads/MIUI白噪音素材提取/forest.mp3"; sourceTree = "<group>"; };
+		93EE47F020DFCBD6007E0593 /* PublicControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				93AC9A6E20DE229F00FCA562 /* LaunchScreen.storyboard */,
 				93AC9A8C20DE277100FCA562 /* Page1.swift */,
 				93AC9A8E20DE2A7A00FCA562 /* Page2.swift */,
+				93EE47F020DFCBD6007E0593 /* PublicControl.swift */,
 				93AC9AA720DE557300FCA562 /* sound */,
 				93AC9A7120DE229F00FCA562 /* Info.plist */,
 			);
@@ -237,6 +240,7 @@
 			files = (
 				93AC9A6820DE229D00FCA562 /* ViewController.swift in Sources */,
 				93AC9A8F20DE2A7A00FCA562 /* Page2.swift in Sources */,
+				93EE47F120DFCBD6007E0593 /* PublicControl.swift in Sources */,
 				93AC9A6620DE229D00FCA562 /* AppDelegate.swift in Sources */,
 				93AC9A8D20DE277100FCA562 /* Page1.swift in Sources */,
 			);
