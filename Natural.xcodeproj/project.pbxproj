@@ -7,37 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		934A74F320E13E5800837E1E /* beach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 934A74ED20E13E5800837E1E /* beach.mp3 */; };
+		934A74F420E13E5800837E1E /* stove_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 934A74EE20E13E5800837E1E /* stove_fire.mp3 */; };
+		934A74F520E13E5800837E1E /* summer_night.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 934A74EF20E13E5800837E1E /* summer_night.mp3 */; };
+		934A74F620E13E5800837E1E /* numberpicker_value_change.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 934A74F020E13E5800837E1E /* numberpicker_value_change.ogg */; };
+		934A74F720E13E5800837E1E /* forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 934A74F120E13E5800837E1E /* forest.mp3 */; };
+		934A74F820E13E5800837E1E /* spring_rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 934A74F220E13E5800837E1E /* spring_rain.mp3 */; };
 		93AC9A6620DE229D00FCA562 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AC9A6520DE229D00FCA562 /* AppDelegate.swift */; };
 		93AC9A6820DE229D00FCA562 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AC9A6720DE229D00FCA562 /* ViewController.swift */; };
 		93AC9A6B20DE229D00FCA562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AC9A6920DE229D00FCA562 /* Main.storyboard */; };
 		93AC9A6D20DE229F00FCA562 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93AC9A6C20DE229F00FCA562 /* Assets.xcassets */; };
 		93AC9A7020DE229F00FCA562 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AC9A6E20DE229F00FCA562 /* LaunchScreen.storyboard */; };
-		93AC9A7D20DE23A000FCA562 /* PagingMenuController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AC9A7C20DE234400FCA562 /* PagingMenuController.framework */; };
-		93AC9A7E20DE23A000FCA562 /* PagingMenuController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93AC9A7C20DE234400FCA562 /* PagingMenuController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		93AC9A8D20DE277100FCA562 /* Page1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AC9A8C20DE277100FCA562 /* Page1.swift */; };
 		93AC9A8F20DE2A7A00FCA562 /* Page2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AC9A8E20DE2A7A00FCA562 /* Page2.swift */; };
-		93AC9AAE20DE559000FCA562 /* numberpicker_value_change.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 93AC9AA820DE558F00FCA562 /* numberpicker_value_change.ogg */; };
-		93AC9AAF20DE559000FCA562 /* spring_rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 93AC9AA920DE558F00FCA562 /* spring_rain.mp3 */; };
-		93AC9AB020DE559000FCA562 /* beach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 93AC9AAA20DE559000FCA562 /* beach.mp3 */; };
-		93AC9AB120DE559000FCA562 /* stove_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 93AC9AAB20DE559000FCA562 /* stove_fire.mp3 */; };
-		93AC9AB220DE559000FCA562 /* summer_night.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 93AC9AAC20DE559000FCA562 /* summer_night.mp3 */; };
-		93AC9AB320DE559000FCA562 /* forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 93AC9AAD20DE559000FCA562 /* forest.mp3 */; };
 		93EE47F120DFCBD6007E0593 /* PublicControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE47F020DFCBD6007E0593 /* PublicControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		93AC9A7B20DE234400FCA562 /* PBXContainerItemProxy */ = {
+		934A74FD20E145E300837E1E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 93AC9A7720DE234400FCA562 /* PagingMenuController.xcodeproj */;
+			containerPortal = 934A74F920E145E300837E1E /* PagingMenuController.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = ECE530671B6DEB18001CF201;
-			remoteInfo = PagingMenuController;
-		};
-		93AC9A7F20DE23A000FCA562 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 93AC9A7720DE234400FCA562 /* PagingMenuController.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = ECE530661B6DEB18001CF201;
 			remoteInfo = PagingMenuController;
 		};
 /* End PBXContainerItemProxy section */
@@ -49,7 +40,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				93AC9A7E20DE23A000FCA562 /* PagingMenuController.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,6 +47,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		934A74ED20E13E5800837E1E /* beach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beach.mp3; sourceTree = "<group>"; };
+		934A74EE20E13E5800837E1E /* stove_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stove_fire.mp3; sourceTree = "<group>"; };
+		934A74EF20E13E5800837E1E /* summer_night.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = summer_night.mp3; sourceTree = "<group>"; };
+		934A74F020E13E5800837E1E /* numberpicker_value_change.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = numberpicker_value_change.ogg; sourceTree = "<group>"; };
+		934A74F120E13E5800837E1E /* forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = forest.mp3; sourceTree = "<group>"; };
+		934A74F220E13E5800837E1E /* spring_rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spring_rain.mp3; sourceTree = "<group>"; };
+		934A74F920E145E300837E1E /* PagingMenuController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PagingMenuController.xcodeproj; path = ../PagingMenuControllerForSwift4/PagingMenuController.xcodeproj; sourceTree = "<group>"; };
 		93AC9A6220DE229D00FCA562 /* Natural.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Natural.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AC9A6520DE229D00FCA562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93AC9A6720DE229D00FCA562 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,15 +61,8 @@
 		93AC9A6C20DE229F00FCA562 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93AC9A6F20DE229F00FCA562 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93AC9A7120DE229F00FCA562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93AC9A7720DE234400FCA562 /* PagingMenuController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PagingMenuController.xcodeproj; path = ../PagingMenuController/PagingMenuController.xcodeproj; sourceTree = "<group>"; };
 		93AC9A8C20DE277100FCA562 /* Page1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1.swift; sourceTree = "<group>"; };
 		93AC9A8E20DE2A7A00FCA562 /* Page2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2.swift; sourceTree = "<group>"; };
-		93AC9AA820DE558F00FCA562 /* numberpicker_value_change.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; name = numberpicker_value_change.ogg; path = "../../../../Downloads/MIUI白噪音素材提取/numberpicker_value_change.ogg"; sourceTree = "<group>"; };
-		93AC9AA920DE558F00FCA562 /* spring_rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = spring_rain.mp3; path = "../../../../Downloads/MIUI白噪音素材提取/spring_rain.mp3"; sourceTree = "<group>"; };
-		93AC9AAA20DE559000FCA562 /* beach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beach.mp3; path = "../../../../Downloads/MIUI白噪音素材提取/beach.mp3"; sourceTree = "<group>"; };
-		93AC9AAB20DE559000FCA562 /* stove_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = stove_fire.mp3; path = "../../../../Downloads/MIUI白噪音素材提取/stove_fire.mp3"; sourceTree = "<group>"; };
-		93AC9AAC20DE559000FCA562 /* summer_night.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = summer_night.mp3; path = "../../../../Downloads/MIUI白噪音素材提取/summer_night.mp3"; sourceTree = "<group>"; };
-		93AC9AAD20DE559000FCA562 /* forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = forest.mp3; path = "../../../../Downloads/MIUI白噪音素材提取/forest.mp3"; sourceTree = "<group>"; };
 		93EE47F020DFCBD6007E0593 /* PublicControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,17 +71,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93AC9A7D20DE23A000FCA562 /* PagingMenuController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		934A74FA20E145E300837E1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				934A74FE20E145E300837E1E /* PagingMenuController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		93AC9A5920DE229D00FCA562 = {
 			isa = PBXGroup;
 			children = (
-				93AC9A7720DE234400FCA562 /* PagingMenuController.xcodeproj */,
+				934A74F920E145E300837E1E /* PagingMenuController.xcodeproj */,
 				93AC9A6420DE229D00FCA562 /* Natural */,
 				93AC9A6320DE229D00FCA562 /* Products */,
 			);
@@ -122,23 +119,15 @@
 			path = Natural;
 			sourceTree = "<group>";
 		};
-		93AC9A7820DE234400FCA562 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				93AC9A7C20DE234400FCA562 /* PagingMenuController.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		93AC9AA720DE557300FCA562 /* sound */ = {
 			isa = PBXGroup;
 			children = (
-				93AC9AAA20DE559000FCA562 /* beach.mp3 */,
-				93AC9AAD20DE559000FCA562 /* forest.mp3 */,
-				93AC9AA820DE558F00FCA562 /* numberpicker_value_change.ogg */,
-				93AC9AA920DE558F00FCA562 /* spring_rain.mp3 */,
-				93AC9AAB20DE559000FCA562 /* stove_fire.mp3 */,
-				93AC9AAC20DE559000FCA562 /* summer_night.mp3 */,
+				934A74ED20E13E5800837E1E /* beach.mp3 */,
+				934A74F120E13E5800837E1E /* forest.mp3 */,
+				934A74F020E13E5800837E1E /* numberpicker_value_change.ogg */,
+				934A74F220E13E5800837E1E /* spring_rain.mp3 */,
+				934A74EE20E13E5800837E1E /* stove_fire.mp3 */,
+				934A74EF20E13E5800837E1E /* summer_night.mp3 */,
 			);
 			path = sound;
 			sourceTree = "<group>";
@@ -158,7 +147,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				93AC9A8020DE23A000FCA562 /* PBXTargetDependency */,
 			);
 			name = Natural;
 			productName = Natural;
@@ -193,8 +181,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 93AC9A7820DE234400FCA562 /* Products */;
-					ProjectRef = 93AC9A7720DE234400FCA562 /* PagingMenuController.xcodeproj */;
+					ProductGroup = 934A74FA20E145E300837E1E /* Products */;
+					ProjectRef = 934A74F920E145E300837E1E /* PagingMenuController.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -205,11 +193,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		93AC9A7C20DE234400FCA562 /* PagingMenuController.framework */ = {
+		934A74FE20E145E300837E1E /* PagingMenuController.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = PagingMenuController.framework;
-			remoteRef = 93AC9A7B20DE234400FCA562 /* PBXContainerItemProxy */;
+			remoteRef = 934A74FD20E145E300837E1E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -219,15 +207,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93AC9AB220DE559000FCA562 /* summer_night.mp3 in Resources */,
-				93AC9AB020DE559000FCA562 /* beach.mp3 in Resources */,
-				93AC9AAE20DE559000FCA562 /* numberpicker_value_change.ogg in Resources */,
-				93AC9AAF20DE559000FCA562 /* spring_rain.mp3 in Resources */,
-				93AC9AB320DE559000FCA562 /* forest.mp3 in Resources */,
 				93AC9A7020DE229F00FCA562 /* LaunchScreen.storyboard in Resources */,
 				93AC9A6D20DE229F00FCA562 /* Assets.xcassets in Resources */,
-				93AC9AB120DE559000FCA562 /* stove_fire.mp3 in Resources */,
+				934A74F520E13E5800837E1E /* summer_night.mp3 in Resources */,
+				934A74F720E13E5800837E1E /* forest.mp3 in Resources */,
+				934A74F320E13E5800837E1E /* beach.mp3 in Resources */,
+				934A74F620E13E5800837E1E /* numberpicker_value_change.ogg in Resources */,
 				93AC9A6B20DE229D00FCA562 /* Main.storyboard in Resources */,
+				934A74F420E13E5800837E1E /* stove_fire.mp3 in Resources */,
+				934A74F820E13E5800837E1E /* spring_rain.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,14 +235,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		93AC9A8020DE23A000FCA562 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PagingMenuController;
-			targetProxy = 93AC9A7F20DE23A000FCA562 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		93AC9A6920DE229D00FCA562 /* Main.storyboard */ = {

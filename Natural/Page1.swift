@@ -38,14 +38,8 @@ class Page1: UIViewController {
         view.backgroundColor = UIColor.cyan
         
         //下面是这个界面的文本相关 
-        let textLabel = UILabel.init()
-        textLabel.frame = CGRect(x: 0, y: 540, width: self.view.frame.width, height: 50)
-        textLabel.textAlignment = NSTextAlignment.center
-        textLabel.font = UIFont.boldSystemFont(ofSize: 30)
-        textLabel.textColor = UIColor.white
-        textLabel.alpha = 0.5
-        textLabel.text = "Beach"
-        view.addSubview(textLabel)
+//        let textLabel = PublicLabel.mainLabel(<#T##PublicLabel#>)
+//        self.view.addSubview(textLabel)
         
         //下面是这个界面的按钮相关
         let playBtn = UIButton()
