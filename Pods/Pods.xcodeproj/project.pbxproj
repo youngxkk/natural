@@ -1,0 +1,1846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000A60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000A50 /* Foundation.framework */; };
+		000000000A70 /* FBNodeEnumerator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000170 /* FBNodeEnumerator.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000A80 /* FBRetainCycleDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001A0 /* FBRetainCycleDetector.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000A90 /* FBRetainCycleUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000120 /* FBRetainCycleUtils.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000AA0 /* FBStandardGraphEdgeFilters.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001C0 /* FBStandardGraphEdgeFilters.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000AB0 /* FBObjectGraphConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001E0 /* FBObjectGraphConfiguration.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000AC0 /* FBObjectiveCBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000200 /* FBObjectiveCBlock.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000AD0 /* FBObjectiveCGraphElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000220 /* FBObjectiveCGraphElement.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000AE0 /* FBObjectiveCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000240 /* FBObjectiveCObject.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000AF0 /* FBObjectiveCNSCFTimer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000270 /* FBObjectiveCNSCFTimer.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000B00 /* FBClassStrongLayout.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002E0 /* FBClassStrongLayout.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000B10 /* FBStructEncodingParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000330 /* FBStructEncodingParser.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000B20 /* Struct.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000350 /* Struct.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000B30 /* FBIvarReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000380 /* FBIvarReference.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000B40 /* FBObjectInStructReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003A0 /* FBObjectInStructReference.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000B50 /* rcd_fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003C0 /* rcd_fishhook.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000B60 /* FBAssociationManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000140 /* FBAssociationManager.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000B70 /* FBBlockStrongLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002A0 /* FBBlockStrongLayout.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000B80 /* FBBlockStrongRelationDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002C0 /* FBBlockStrongRelationDetector.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000B90 /* FBClassStrongLayoutHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000300 /* FBClassStrongLayoutHelpers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000BB0 /* FBRetainCycleUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000110 /* FBRetainCycleUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000BC0 /* FBAssociationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000130 /* FBAssociationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000000BD0 /* FBAssociationManager+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000150 /* FBAssociationManager+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000BE0 /* FBNodeEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000160 /* FBNodeEnumerator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000BF0 /* FBRetainCycleDetector+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000180 /* FBRetainCycleDetector+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000C00 /* FBRetainCycleDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000190 /* FBRetainCycleDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000000C10 /* FBStandardGraphEdgeFilters.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000001B0 /* FBStandardGraphEdgeFilters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000000C20 /* FBObjectGraphConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000001D0 /* FBObjectGraphConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000000C30 /* FBObjectiveCBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000001F0 /* FBObjectiveCBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000000C40 /* FBObjectiveCGraphElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000210 /* FBObjectiveCGraphElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000000C50 /* FBObjectiveCObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000230 /* FBObjectiveCObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000000C60 /* FBObjectiveCGraphElement+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000250 /* FBObjectiveCGraphElement+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000C70 /* FBObjectiveCNSCFTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000260 /* FBObjectiveCNSCFTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000000C80 /* FBBlockInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000280 /* FBBlockInterface.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000C90 /* FBBlockStrongLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000290 /* FBBlockStrongLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000CA0 /* FBBlockStrongRelationDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000002B0 /* FBBlockStrongRelationDetector.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000CB0 /* FBClassStrongLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000002D0 /* FBClassStrongLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000CC0 /* FBClassStrongLayoutHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000002F0 /* FBClassStrongLayoutHelpers.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000CD0 /* BaseType.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000310 /* BaseType.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000CE0 /* FBStructEncodingParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000320 /* FBStructEncodingParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000CF0 /* Struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000340 /* Struct.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000D00 /* Type.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000360 /* Type.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000D10 /* FBIvarReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000370 /* FBIvarReference.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000D20 /* FBObjectInStructReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000390 /* FBObjectInStructReference.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000D30 /* FBObjectReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000003B0 /* FBObjectReference.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000D40 /* rcd_fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000003D0 /* rcd_fishhook.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000D90 /* FBRetainCycleDetector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000D80 /* FBRetainCycleDetector-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000000DD0 /* FBRetainCycleDetector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000DC0 /* FBRetainCycleDetector-dummy.m */; };
+		000000000E50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000A50 /* Foundation.framework */; };
+		000000000E60 /* MLeakedObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003F0 /* MLeakedObjectProxy.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000E70 /* MLeaksMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000420 /* MLeaksMessenger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000E80 /* NSObject+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000440 /* NSObject+MemoryLeak.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000E90 /* UIApplication+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000460 /* UIApplication+MemoryLeak.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000EA0 /* UINavigationController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000480 /* UINavigationController+MemoryLeak.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000EB0 /* UIPageViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000004A0 /* UIPageViewController+MemoryLeak.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000EC0 /* UISplitViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000004C0 /* UISplitViewController+MemoryLeak.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000ED0 /* UITabBarController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000004E0 /* UITabBarController+MemoryLeak.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000EE0 /* UITouch+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000500 /* UITouch+MemoryLeak.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000EF0 /* UIView+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000520 /* UIView+MemoryLeak.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000F00 /* UIViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000540 /* UIViewController+MemoryLeak.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000000F20 /* MLeakedObjectProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000003E0 /* MLeakedObjectProxy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000F30 /* MLeaksFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000400 /* MLeaksFinder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000000F40 /* MLeaksMessenger.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000410 /* MLeaksMessenger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000F50 /* NSObject+MemoryLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000430 /* NSObject+MemoryLeak.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000000F60 /* UIApplication+MemoryLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000450 /* UIApplication+MemoryLeak.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000F70 /* UINavigationController+MemoryLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000470 /* UINavigationController+MemoryLeak.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000F80 /* UIPageViewController+MemoryLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000490 /* UIPageViewController+MemoryLeak.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000F90 /* UISplitViewController+MemoryLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000004B0 /* UISplitViewController+MemoryLeak.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000FA0 /* UITabBarController+MemoryLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000004D0 /* UITabBarController+MemoryLeak.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000FB0 /* UITouch+MemoryLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000004F0 /* UITouch+MemoryLeak.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000FC0 /* UIView+MemoryLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000510 /* UIView+MemoryLeak.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000000FD0 /* UIViewController+MemoryLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000530 /* UIViewController+MemoryLeak.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001020 /* MLeaksFinder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001010 /* MLeaksFinder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000001060 /* MLeaksFinder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000001050 /* MLeaksFinder-dummy.m */; };
+		0000000010E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000A50 /* Foundation.framework */; };
+		0000000010F0 /* QQLeakDataUploadCenter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000620 /* QQLeakDataUploadCenter.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001100 /* MemoryIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000710 /* MemoryIndicator.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001110 /* CommonMallocLogger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000580 /* CommonMallocLogger.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001120 /* CStackHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000005A0 /* CStackHelper.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001130 /* CBaseHashmap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000005C0 /* CBaseHashmap.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001140 /* CPtrsHashmap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000005E0 /* CPtrsHashmap.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001150 /* CStacksHashmap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000600 /* CStacksHashmap.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001160 /* QQLeakDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000640 /* QQLeakDeviceInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001170 /* QQLeakFileUploadCenter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000660 /* QQLeakFileUploadCenter.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001180 /* HighSpeedLogger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000006A0 /* HighSpeedLogger.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001190 /* OOMDetectorLogger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000006C0 /* OOMDetectorLogger.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0000000011A0 /* COOMDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000006E0 /* COOMDetector.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0000000011B0 /* OOMDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000006F0 /* OOMDetector.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0000000011C0 /* OOMMemoryStackTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000730 /* OOMMemoryStackTracker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0000000011D0 /* OOMStatisticsInfoCenter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000750 /* OOMStatisticsInfoCenter.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0000000011E0 /* AllocationTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000770 /* AllocationTracker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0000000011F0 /* CMallocHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000790 /* CMallocHook.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001200 /* CLeakChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000007B0 /* CLeakChecker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001210 /* QQLeakChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000007C0 /* QQLeakChecker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001220 /* QQLeakMallocStackTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000007E0 /* QQLeakMallocStackTracker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001230 /* CHeapChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000800 /* CHeapChecker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001240 /* CMemoryChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000820 /* CMemoryChecker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001250 /* CRegisterChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000840 /* CRegisterChecker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001260 /* CSegmentChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000860 /* CSegmentChecker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001270 /* CStackChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000880 /* CStackChecker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001280 /* CObjcFilter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008A0 /* CObjcFilter.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001290 /* CLeakedHashmap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008C0 /* CLeakedHashmap.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0000000012A0 /* CThreadTrackingHashmap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008E0 /* CThreadTrackingHashmap.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0000000012C0 /* libOOMDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000550 /* libOOMDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0000000012D0 /* QQLeakPredefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000560 /* QQLeakPredefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000012E0 /* CommonMallocLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000570 /* CommonMallocLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000012F0 /* CStackHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000590 /* CStackHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001300 /* CBaseHashmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000005B0 /* CBaseHashmap.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001310 /* CPtrsHashmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000005D0 /* CPtrsHashmap.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001320 /* CStacksHashmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000005F0 /* CStacksHashmap.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001330 /* QQLeakDataUploadCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000610 /* QQLeakDataUploadCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000001340 /* QQLeakDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000630 /* QQLeakDeviceInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001350 /* QQLeakFileUploadCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000650 /* QQLeakFileUploadCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000001360 /* OOMDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000670 /* OOMDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000001370 /* QQLeakChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000680 /* QQLeakChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000001380 /* HighSpeedLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000690 /* HighSpeedLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001390 /* OOMDetectorLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000006B0 /* OOMDetectorLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000013A0 /* COOMDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000006D0 /* COOMDetector.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000013B0 /* MemoryIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000700 /* MemoryIndicator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000013C0 /* OOMMemoryStackTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000720 /* OOMMemoryStackTracker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000013D0 /* OOMStatisticsInfoCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000740 /* OOMStatisticsInfoCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0000000013E0 /* AllocationTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000760 /* AllocationTracker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000013F0 /* CMallocHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000780 /* CMallocHook.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001400 /* CLeakChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000007A0 /* CLeakChecker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001410 /* QQLeakMallocStackTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000007D0 /* QQLeakMallocStackTracker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001420 /* CHeapChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000007F0 /* CHeapChecker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001430 /* CMemoryChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000810 /* CMemoryChecker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001440 /* CRegisterChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000830 /* CRegisterChecker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001450 /* CSegmentChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000850 /* CSegmentChecker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001460 /* CStackChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000870 /* CStackChecker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001470 /* CObjcFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000890 /* CObjcFilter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001480 /* CLeakedHashmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000008B0 /* CLeakedHashmap.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001490 /* CThreadTrackingHashmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000008D0 /* CThreadTrackingHashmap.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000014B0 /* oomgif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0000000009C0 /* oomgif.gif */; };
+		000000001500 /* OOMDetector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000014F0 /* OOMDetector-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000001540 /* OOMDetector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000001530 /* OOMDetector-dummy.m */; };
+		0000000015C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000A50 /* Foundation.framework */; };
+		0000000015D0 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008F0 /* MenuItemView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0000000015E0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000900 /* MenuView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0000000015F0 /* PagingMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000910 /* PagingMenuController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001600 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000920 /* PagingViewController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001610 /* MenuItemViewCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000930 /* MenuItemViewCustomizable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001620 /* MenuViewCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000940 /* MenuViewCustomizable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001630 /* Pagable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000950 /* Pagable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001640 /* PagingMenuControllerCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000960 /* PagingMenuControllerCustomizable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0000000016A0 /* PagingMenuController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001680 /* PagingMenuController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0000000016E0 /* PagingMenuController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000016D0 /* PagingMenuController-dummy.m */; };
+		000000001760 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000A50 /* Foundation.framework */; };
+		000000001770 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 000000000970 /* fishhook.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		000000001790 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000980 /* fishhook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0000000017E0 /* fishhook-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000017D0 /* fishhook-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000001820 /* fishhook-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000001810 /* fishhook-dummy.m */; };
+		0000000018A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000A50 /* Foundation.framework */; };
+		000000001920 /* Pods-Natural-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001900 /* Pods-Natural-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000001980 /* Pods-Natural-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000001970 /* Pods-Natural-dummy.m */; };
+		0000000019A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000001990 /* CoreGraphics.framework */; };
+		0000000019C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0000000019B0 /* UIKit.framework */; };
+		000000001A40 /* FBRetainCycleDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000001A30 /* FBRetainCycleDetector.framework */; };
+		000000001AA0 /* fishhook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000001A90 /* fishhook.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0000000019D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0000000009D0;
+			remoteInfo = FBRetainCycleDetector;
+		};
+		0000000019F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000DE0;
+			remoteInfo = MLeaksFinder;
+		};
+		000000001A10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0000000009D0;
+			remoteInfo = FBRetainCycleDetector;
+		};
+		000000001A50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000001070;
+			remoteInfo = OOMDetector;
+		};
+		000000001A70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0000000016F0;
+			remoteInfo = fishhook;
+		};
+		000000001AB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000001550;
+			remoteInfo = PagingMenuController;
+		};
+		000000001AD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0000000016F0;
+			remoteInfo = fishhook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000000000100 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		000000000110 /* FBRetainCycleUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBRetainCycleUtils.h; path = FBRetainCycleDetector/FBRetainCycleUtils.h; sourceTree = "<group>"; };
+		000000000120 /* FBRetainCycleUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBRetainCycleUtils.m; path = FBRetainCycleDetector/FBRetainCycleUtils.m; sourceTree = "<group>"; };
+		000000000130 /* FBAssociationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAssociationManager.h; path = FBRetainCycleDetector/Associations/FBAssociationManager.h; sourceTree = "<group>"; };
+		000000000140 /* FBAssociationManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBAssociationManager.mm; path = FBRetainCycleDetector/Associations/FBAssociationManager.mm; sourceTree = "<group>"; };
+		000000000150 /* FBAssociationManager+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBAssociationManager+Internal.h"; path = "FBRetainCycleDetector/Associations/Internal/FBAssociationManager+Internal.h"; sourceTree = "<group>"; };
+		000000000160 /* FBNodeEnumerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNodeEnumerator.h; path = FBRetainCycleDetector/Detector/FBNodeEnumerator.h; sourceTree = "<group>"; };
+		000000000170 /* FBNodeEnumerator.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBNodeEnumerator.mm; path = FBRetainCycleDetector/Detector/FBNodeEnumerator.mm; sourceTree = "<group>"; };
+		000000000180 /* FBRetainCycleDetector+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBRetainCycleDetector+Internal.h"; path = "FBRetainCycleDetector/Detector/FBRetainCycleDetector+Internal.h"; sourceTree = "<group>"; };
+		000000000190 /* FBRetainCycleDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBRetainCycleDetector.h; path = FBRetainCycleDetector/Detector/FBRetainCycleDetector.h; sourceTree = "<group>"; };
+		0000000001A0 /* FBRetainCycleDetector.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBRetainCycleDetector.mm; path = FBRetainCycleDetector/Detector/FBRetainCycleDetector.mm; sourceTree = "<group>"; };
+		0000000001B0 /* FBStandardGraphEdgeFilters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBStandardGraphEdgeFilters.h; path = FBRetainCycleDetector/Filtering/FBStandardGraphEdgeFilters.h; sourceTree = "<group>"; };
+		0000000001C0 /* FBStandardGraphEdgeFilters.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBStandardGraphEdgeFilters.mm; path = FBRetainCycleDetector/Filtering/FBStandardGraphEdgeFilters.mm; sourceTree = "<group>"; };
+		0000000001D0 /* FBObjectGraphConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBObjectGraphConfiguration.h; path = FBRetainCycleDetector/Graph/FBObjectGraphConfiguration.h; sourceTree = "<group>"; };
+		0000000001E0 /* FBObjectGraphConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBObjectGraphConfiguration.m; path = FBRetainCycleDetector/Graph/FBObjectGraphConfiguration.m; sourceTree = "<group>"; };
+		0000000001F0 /* FBObjectiveCBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBObjectiveCBlock.h; path = FBRetainCycleDetector/Graph/FBObjectiveCBlock.h; sourceTree = "<group>"; };
+		000000000200 /* FBObjectiveCBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBObjectiveCBlock.m; path = FBRetainCycleDetector/Graph/FBObjectiveCBlock.m; sourceTree = "<group>"; };
+		000000000210 /* FBObjectiveCGraphElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBObjectiveCGraphElement.h; path = FBRetainCycleDetector/Graph/FBObjectiveCGraphElement.h; sourceTree = "<group>"; };
+		000000000220 /* FBObjectiveCGraphElement.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBObjectiveCGraphElement.mm; path = FBRetainCycleDetector/Graph/FBObjectiveCGraphElement.mm; sourceTree = "<group>"; };
+		000000000230 /* FBObjectiveCObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBObjectiveCObject.h; path = FBRetainCycleDetector/Graph/FBObjectiveCObject.h; sourceTree = "<group>"; };
+		000000000240 /* FBObjectiveCObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBObjectiveCObject.m; path = FBRetainCycleDetector/Graph/FBObjectiveCObject.m; sourceTree = "<group>"; };
+		000000000250 /* FBObjectiveCGraphElement+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBObjectiveCGraphElement+Internal.h"; path = "FBRetainCycleDetector/Graph/Internal/FBObjectiveCGraphElement+Internal.h"; sourceTree = "<group>"; };
+		000000000260 /* FBObjectiveCNSCFTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBObjectiveCNSCFTimer.h; path = FBRetainCycleDetector/Graph/Specialization/FBObjectiveCNSCFTimer.h; sourceTree = "<group>"; };
+		000000000270 /* FBObjectiveCNSCFTimer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBObjectiveCNSCFTimer.mm; path = FBRetainCycleDetector/Graph/Specialization/FBObjectiveCNSCFTimer.mm; sourceTree = "<group>"; };
+		000000000280 /* FBBlockInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBBlockInterface.h; path = FBRetainCycleDetector/Layout/Blocks/FBBlockInterface.h; sourceTree = "<group>"; };
+		000000000290 /* FBBlockStrongLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBBlockStrongLayout.h; path = FBRetainCycleDetector/Layout/Blocks/FBBlockStrongLayout.h; sourceTree = "<group>"; };
+		0000000002A0 /* FBBlockStrongLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBBlockStrongLayout.m; path = FBRetainCycleDetector/Layout/Blocks/FBBlockStrongLayout.m; sourceTree = "<group>"; };
+		0000000002B0 /* FBBlockStrongRelationDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBBlockStrongRelationDetector.h; path = FBRetainCycleDetector/Layout/Blocks/FBBlockStrongRelationDetector.h; sourceTree = "<group>"; };
+		0000000002C0 /* FBBlockStrongRelationDetector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBBlockStrongRelationDetector.m; path = FBRetainCycleDetector/Layout/Blocks/FBBlockStrongRelationDetector.m; sourceTree = "<group>"; };
+		0000000002D0 /* FBClassStrongLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBClassStrongLayout.h; path = FBRetainCycleDetector/Layout/Classes/FBClassStrongLayout.h; sourceTree = "<group>"; };
+		0000000002E0 /* FBClassStrongLayout.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBClassStrongLayout.mm; path = FBRetainCycleDetector/Layout/Classes/FBClassStrongLayout.mm; sourceTree = "<group>"; };
+		0000000002F0 /* FBClassStrongLayoutHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBClassStrongLayoutHelpers.h; path = FBRetainCycleDetector/Layout/Classes/FBClassStrongLayoutHelpers.h; sourceTree = "<group>"; };
+		000000000300 /* FBClassStrongLayoutHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBClassStrongLayoutHelpers.m; path = FBRetainCycleDetector/Layout/Classes/FBClassStrongLayoutHelpers.m; sourceTree = "<group>"; };
+		000000000310 /* BaseType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseType.h; path = FBRetainCycleDetector/Layout/Classes/Parser/BaseType.h; sourceTree = "<group>"; };
+		000000000320 /* FBStructEncodingParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBStructEncodingParser.h; path = FBRetainCycleDetector/Layout/Classes/Parser/FBStructEncodingParser.h; sourceTree = "<group>"; };
+		000000000330 /* FBStructEncodingParser.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBStructEncodingParser.mm; path = FBRetainCycleDetector/Layout/Classes/Parser/FBStructEncodingParser.mm; sourceTree = "<group>"; };
+		000000000340 /* Struct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Struct.h; path = FBRetainCycleDetector/Layout/Classes/Parser/Struct.h; sourceTree = "<group>"; };
+		000000000350 /* Struct.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = Struct.mm; path = FBRetainCycleDetector/Layout/Classes/Parser/Struct.mm; sourceTree = "<group>"; };
+		000000000360 /* Type.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Type.h; path = FBRetainCycleDetector/Layout/Classes/Parser/Type.h; sourceTree = "<group>"; };
+		000000000370 /* FBIvarReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBIvarReference.h; path = FBRetainCycleDetector/Layout/Classes/Reference/FBIvarReference.h; sourceTree = "<group>"; };
+		000000000380 /* FBIvarReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBIvarReference.m; path = FBRetainCycleDetector/Layout/Classes/Reference/FBIvarReference.m; sourceTree = "<group>"; };
+		000000000390 /* FBObjectInStructReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBObjectInStructReference.h; path = FBRetainCycleDetector/Layout/Classes/Reference/FBObjectInStructReference.h; sourceTree = "<group>"; };
+		0000000003A0 /* FBObjectInStructReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBObjectInStructReference.m; path = FBRetainCycleDetector/Layout/Classes/Reference/FBObjectInStructReference.m; sourceTree = "<group>"; };
+		0000000003B0 /* FBObjectReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBObjectReference.h; path = FBRetainCycleDetector/Layout/Classes/Reference/FBObjectReference.h; sourceTree = "<group>"; };
+		0000000003C0 /* rcd_fishhook.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = rcd_fishhook.c; path = rcd_fishhook/rcd_fishhook.c; sourceTree = "<group>"; };
+		0000000003D0 /* rcd_fishhook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rcd_fishhook.h; path = rcd_fishhook/rcd_fishhook.h; sourceTree = "<group>"; };
+		0000000003E0 /* MLeakedObjectProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLeakedObjectProxy.h; path = MLeaksFinder/MLeakedObjectProxy.h; sourceTree = "<group>"; };
+		0000000003F0 /* MLeakedObjectProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLeakedObjectProxy.m; path = MLeaksFinder/MLeakedObjectProxy.m; sourceTree = "<group>"; };
+		000000000400 /* MLeaksFinder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLeaksFinder.h; path = MLeaksFinder/MLeaksFinder.h; sourceTree = "<group>"; };
+		000000000410 /* MLeaksMessenger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLeaksMessenger.h; path = MLeaksFinder/MLeaksMessenger.h; sourceTree = "<group>"; };
+		000000000420 /* MLeaksMessenger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLeaksMessenger.m; path = MLeaksFinder/MLeaksMessenger.m; sourceTree = "<group>"; };
+		000000000430 /* NSObject+MemoryLeak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MemoryLeak.h"; path = "MLeaksFinder/NSObject+MemoryLeak.h"; sourceTree = "<group>"; };
+		000000000440 /* NSObject+MemoryLeak.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MemoryLeak.m"; path = "MLeaksFinder/NSObject+MemoryLeak.m"; sourceTree = "<group>"; };
+		000000000450 /* UIApplication+MemoryLeak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+MemoryLeak.h"; path = "MLeaksFinder/UIApplication+MemoryLeak.h"; sourceTree = "<group>"; };
+		000000000460 /* UIApplication+MemoryLeak.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+MemoryLeak.m"; path = "MLeaksFinder/UIApplication+MemoryLeak.m"; sourceTree = "<group>"; };
+		000000000470 /* UINavigationController+MemoryLeak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+MemoryLeak.h"; path = "MLeaksFinder/UINavigationController+MemoryLeak.h"; sourceTree = "<group>"; };
+		000000000480 /* UINavigationController+MemoryLeak.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+MemoryLeak.m"; path = "MLeaksFinder/UINavigationController+MemoryLeak.m"; sourceTree = "<group>"; };
+		000000000490 /* UIPageViewController+MemoryLeak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIPageViewController+MemoryLeak.h"; path = "MLeaksFinder/UIPageViewController+MemoryLeak.h"; sourceTree = "<group>"; };
+		0000000004A0 /* UIPageViewController+MemoryLeak.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIPageViewController+MemoryLeak.m"; path = "MLeaksFinder/UIPageViewController+MemoryLeak.m"; sourceTree = "<group>"; };
+		0000000004B0 /* UISplitViewController+MemoryLeak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISplitViewController+MemoryLeak.h"; path = "MLeaksFinder/UISplitViewController+MemoryLeak.h"; sourceTree = "<group>"; };
+		0000000004C0 /* UISplitViewController+MemoryLeak.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UISplitViewController+MemoryLeak.m"; path = "MLeaksFinder/UISplitViewController+MemoryLeak.m"; sourceTree = "<group>"; };
+		0000000004D0 /* UITabBarController+MemoryLeak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITabBarController+MemoryLeak.h"; path = "MLeaksFinder/UITabBarController+MemoryLeak.h"; sourceTree = "<group>"; };
+		0000000004E0 /* UITabBarController+MemoryLeak.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITabBarController+MemoryLeak.m"; path = "MLeaksFinder/UITabBarController+MemoryLeak.m"; sourceTree = "<group>"; };
+		0000000004F0 /* UITouch+MemoryLeak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITouch+MemoryLeak.h"; path = "MLeaksFinder/UITouch+MemoryLeak.h"; sourceTree = "<group>"; };
+		000000000500 /* UITouch+MemoryLeak.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITouch+MemoryLeak.m"; path = "MLeaksFinder/UITouch+MemoryLeak.m"; sourceTree = "<group>"; };
+		000000000510 /* UIView+MemoryLeak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MemoryLeak.h"; path = "MLeaksFinder/UIView+MemoryLeak.h"; sourceTree = "<group>"; };
+		000000000520 /* UIView+MemoryLeak.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MemoryLeak.m"; path = "MLeaksFinder/UIView+MemoryLeak.m"; sourceTree = "<group>"; };
+		000000000530 /* UIViewController+MemoryLeak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MemoryLeak.h"; path = "MLeaksFinder/UIViewController+MemoryLeak.h"; sourceTree = "<group>"; };
+		000000000540 /* UIViewController+MemoryLeak.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MemoryLeak.m"; path = "MLeaksFinder/UIViewController+MemoryLeak.m"; sourceTree = "<group>"; };
+		000000000550 /* libOOMDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libOOMDetector.h; path = libOOMDetector/libOOMDetector/libOOMDetector.h; sourceTree = "<group>"; };
+		000000000560 /* QQLeakPredefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QQLeakPredefines.h; path = libOOMDetector/libOOMDetector/OOMDetector/common/QQLeakPredefines.h; sourceTree = "<group>"; };
+		000000000570 /* CommonMallocLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CommonMallocLogger.h; path = libOOMDetector/libOOMDetector/OOMDetector/common/stack/CommonMallocLogger.h; sourceTree = "<group>"; };
+		000000000580 /* CommonMallocLogger.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CommonMallocLogger.mm; path = libOOMDetector/libOOMDetector/OOMDetector/common/stack/CommonMallocLogger.mm; sourceTree = "<group>"; };
+		000000000590 /* CStackHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CStackHelper.h; path = libOOMDetector/libOOMDetector/OOMDetector/common/stack/CStackHelper.h; sourceTree = "<group>"; };
+		0000000005A0 /* CStackHelper.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CStackHelper.mm; path = libOOMDetector/libOOMDetector/OOMDetector/common/stack/CStackHelper.mm; sourceTree = "<group>"; };
+		0000000005B0 /* CBaseHashmap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBaseHashmap.h; path = libOOMDetector/libOOMDetector/OOMDetector/common/structure/CBaseHashmap.h; sourceTree = "<group>"; };
+		0000000005C0 /* CBaseHashmap.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CBaseHashmap.mm; path = libOOMDetector/libOOMDetector/OOMDetector/common/structure/CBaseHashmap.mm; sourceTree = "<group>"; };
+		0000000005D0 /* CPtrsHashmap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPtrsHashmap.h; path = libOOMDetector/libOOMDetector/OOMDetector/common/structure/CPtrsHashmap.h; sourceTree = "<group>"; };
+		0000000005E0 /* CPtrsHashmap.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CPtrsHashmap.mm; path = libOOMDetector/libOOMDetector/OOMDetector/common/structure/CPtrsHashmap.mm; sourceTree = "<group>"; };
+		0000000005F0 /* CStacksHashmap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CStacksHashmap.h; path = libOOMDetector/libOOMDetector/OOMDetector/common/structure/CStacksHashmap.h; sourceTree = "<group>"; };
+		000000000600 /* CStacksHashmap.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CStacksHashmap.mm; path = libOOMDetector/libOOMDetector/OOMDetector/common/structure/CStacksHashmap.mm; sourceTree = "<group>"; };
+		000000000610 /* QQLeakDataUploadCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QQLeakDataUploadCenter.h; path = libOOMDetector/libOOMDetector/OOMDetector/common/upload/QQLeakDataUploadCenter.h; sourceTree = "<group>"; };
+		000000000620 /* QQLeakDataUploadCenter.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = QQLeakDataUploadCenter.mm; path = libOOMDetector/libOOMDetector/OOMDetector/common/upload/QQLeakDataUploadCenter.mm; sourceTree = "<group>"; };
+		000000000630 /* QQLeakDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QQLeakDeviceInfo.h; path = libOOMDetector/libOOMDetector/OOMDetector/common/upload/QQLeakDeviceInfo.h; sourceTree = "<group>"; };
+		000000000640 /* QQLeakDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QQLeakDeviceInfo.m; path = libOOMDetector/libOOMDetector/OOMDetector/common/upload/QQLeakDeviceInfo.m; sourceTree = "<group>"; };
+		000000000650 /* QQLeakFileUploadCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QQLeakFileUploadCenter.h; path = libOOMDetector/libOOMDetector/OOMDetector/common/upload/QQLeakFileUploadCenter.h; sourceTree = "<group>"; };
+		000000000660 /* QQLeakFileUploadCenter.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = QQLeakFileUploadCenter.mm; path = libOOMDetector/libOOMDetector/OOMDetector/common/upload/QQLeakFileUploadCenter.mm; sourceTree = "<group>"; };
+		000000000670 /* OOMDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOMDetector.h; path = libOOMDetector/libOOMDetector/OOMDetector/Headers/OOMDetector.h; sourceTree = "<group>"; };
+		000000000680 /* QQLeakChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QQLeakChecker.h; path = libOOMDetector/libOOMDetector/OOMDetector/Headers/QQLeakChecker.h; sourceTree = "<group>"; };
+		000000000690 /* HighSpeedLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HighSpeedLogger.h; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/logger/HighSpeedLogger.h; sourceTree = "<group>"; };
+		0000000006A0 /* HighSpeedLogger.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = HighSpeedLogger.mm; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/logger/HighSpeedLogger.mm; sourceTree = "<group>"; };
+		0000000006B0 /* OOMDetectorLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOMDetectorLogger.h; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/logger/OOMDetectorLogger.h; sourceTree = "<group>"; };
+		0000000006C0 /* OOMDetectorLogger.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = OOMDetectorLogger.mm; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/logger/OOMDetectorLogger.mm; sourceTree = "<group>"; };
+		0000000006D0 /* COOMDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = COOMDetector.h; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/main/COOMDetector.h; sourceTree = "<group>"; };
+		0000000006E0 /* COOMDetector.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = COOMDetector.mm; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/main/COOMDetector.mm; sourceTree = "<group>"; };
+		0000000006F0 /* OOMDetector.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = OOMDetector.mm; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/main/OOMDetector.mm; sourceTree = "<group>"; };
+		000000000700 /* MemoryIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MemoryIndicator.h; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/memoryIndicator/MemoryIndicator.h; sourceTree = "<group>"; };
+		000000000710 /* MemoryIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MemoryIndicator.m; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/memoryIndicator/MemoryIndicator.m; sourceTree = "<group>"; };
+		000000000720 /* OOMMemoryStackTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOMMemoryStackTracker.h; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/stacktrack/OOMMemoryStackTracker.h; sourceTree = "<group>"; };
+		000000000730 /* OOMMemoryStackTracker.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = OOMMemoryStackTracker.mm; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/stacktrack/OOMMemoryStackTracker.mm; sourceTree = "<group>"; };
+		000000000740 /* OOMStatisticsInfoCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOMStatisticsInfoCenter.h; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/statistic/OOMStatisticsInfoCenter.h; sourceTree = "<group>"; };
+		000000000750 /* OOMStatisticsInfoCenter.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = OOMStatisticsInfoCenter.mm; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/statistic/OOMStatisticsInfoCenter.mm; sourceTree = "<group>"; };
+		000000000760 /* AllocationTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AllocationTracker.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/hook/AllocationTracker.h; sourceTree = "<group>"; };
+		000000000770 /* AllocationTracker.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = AllocationTracker.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/hook/AllocationTracker.mm; sourceTree = "<group>"; };
+		000000000780 /* CMallocHook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMallocHook.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/hook/CMallocHook.h; sourceTree = "<group>"; };
+		000000000790 /* CMallocHook.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CMallocHook.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/hook/CMallocHook.mm; sourceTree = "<group>"; };
+		0000000007A0 /* CLeakChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLeakChecker.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/main/CLeakChecker.h; sourceTree = "<group>"; };
+		0000000007B0 /* CLeakChecker.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CLeakChecker.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/main/CLeakChecker.mm; sourceTree = "<group>"; };
+		0000000007C0 /* QQLeakChecker.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = QQLeakChecker.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/main/QQLeakChecker.mm; sourceTree = "<group>"; };
+		0000000007D0 /* QQLeakMallocStackTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QQLeakMallocStackTracker.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/main/QQLeakMallocStackTracker.h; sourceTree = "<group>"; };
+		0000000007E0 /* QQLeakMallocStackTracker.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = QQLeakMallocStackTracker.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/main/QQLeakMallocStackTracker.mm; sourceTree = "<group>"; };
+		0000000007F0 /* CHeapChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CHeapChecker.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/memchecker/CHeapChecker.h; sourceTree = "<group>"; };
+		000000000800 /* CHeapChecker.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CHeapChecker.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/memchecker/CHeapChecker.mm; sourceTree = "<group>"; };
+		000000000810 /* CMemoryChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMemoryChecker.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/memchecker/CMemoryChecker.h; sourceTree = "<group>"; };
+		000000000820 /* CMemoryChecker.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CMemoryChecker.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/memchecker/CMemoryChecker.mm; sourceTree = "<group>"; };
+		000000000830 /* CRegisterChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRegisterChecker.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/memchecker/CRegisterChecker.h; sourceTree = "<group>"; };
+		000000000840 /* CRegisterChecker.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CRegisterChecker.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/memchecker/CRegisterChecker.mm; sourceTree = "<group>"; };
+		000000000850 /* CSegmentChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSegmentChecker.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/memchecker/CSegmentChecker.h; sourceTree = "<group>"; };
+		000000000860 /* CSegmentChecker.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CSegmentChecker.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/memchecker/CSegmentChecker.mm; sourceTree = "<group>"; };
+		000000000870 /* CStackChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CStackChecker.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/memchecker/CStackChecker.h; sourceTree = "<group>"; };
+		000000000880 /* CStackChecker.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CStackChecker.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/memchecker/CStackChecker.mm; sourceTree = "<group>"; };
+		000000000890 /* CObjcFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CObjcFilter.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/objc/CObjcFilter.h; sourceTree = "<group>"; };
+		0000000008A0 /* CObjcFilter.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CObjcFilter.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/objc/CObjcFilter.mm; sourceTree = "<group>"; };
+		0000000008B0 /* CLeakedHashmap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLeakedHashmap.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/structures/CLeakedHashmap.h; sourceTree = "<group>"; };
+		0000000008C0 /* CLeakedHashmap.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CLeakedHashmap.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/structures/CLeakedHashmap.mm; sourceTree = "<group>"; };
+		0000000008D0 /* CThreadTrackingHashmap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CThreadTrackingHashmap.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/structures/CThreadTrackingHashmap.h; sourceTree = "<group>"; };
+		0000000008E0 /* CThreadTrackingHashmap.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CThreadTrackingHashmap.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/structures/CThreadTrackingHashmap.mm; sourceTree = "<group>"; };
+		0000000008F0 /* MenuItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuItemView.swift; path = Pod/Classes/MenuItemView.swift; sourceTree = "<group>"; };
+		000000000900 /* MenuView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuView.swift; path = Pod/Classes/MenuView.swift; sourceTree = "<group>"; };
+		000000000910 /* PagingMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingMenuController.swift; path = Pod/Classes/PagingMenuController.swift; sourceTree = "<group>"; };
+		000000000920 /* PagingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingViewController.swift; path = Pod/Classes/PagingViewController.swift; sourceTree = "<group>"; };
+		000000000930 /* MenuItemViewCustomizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuItemViewCustomizable.swift; path = Pod/Classes/Protocols/MenuItemViewCustomizable.swift; sourceTree = "<group>"; };
+		000000000940 /* MenuViewCustomizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuViewCustomizable.swift; path = Pod/Classes/Protocols/MenuViewCustomizable.swift; sourceTree = "<group>"; };
+		000000000950 /* Pagable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pagable.swift; path = Pod/Classes/Protocols/Pagable.swift; sourceTree = "<group>"; };
+		000000000960 /* PagingMenuControllerCustomizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingMenuControllerCustomizable.swift; path = Pod/Classes/Protocols/PagingMenuControllerCustomizable.swift; sourceTree = "<group>"; };
+		000000000970 /* fishhook.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		000000000980 /* fishhook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		0000000009A0 /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RevealServer.framework; path = "RevealServer-4/iOS/RevealServer.framework"; sourceTree = "<group>"; };
+		0000000009C0 /* oomgif.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = oomgif.gif; path = assets/oomgif.gif; sourceTree = "<group>"; };
+		000000000A10 /* FBRetainCycleDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBRetainCycleDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000A50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		000000000D60 /* FBRetainCycleDetector.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBRetainCycleDetector.xcconfig; sourceTree = "<group>"; };
+		000000000D70 /* FBRetainCycleDetector.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBRetainCycleDetector.modulemap; sourceTree = "<group>"; };
+		000000000D80 /* FBRetainCycleDetector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBRetainCycleDetector-umbrella.h"; sourceTree = "<group>"; };
+		000000000DA0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000000DB0 /* FBRetainCycleDetector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBRetainCycleDetector-prefix.pch"; sourceTree = "<group>"; };
+		000000000DC0 /* FBRetainCycleDetector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBRetainCycleDetector-dummy.m"; sourceTree = "<group>"; };
+		000000000E20 /* MLeaksFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MLeaksFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000FF0 /* MLeaksFinder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MLeaksFinder.xcconfig; sourceTree = "<group>"; };
+		000000001000 /* MLeaksFinder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MLeaksFinder.modulemap; sourceTree = "<group>"; };
+		000000001010 /* MLeaksFinder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MLeaksFinder-umbrella.h"; sourceTree = "<group>"; };
+		000000001030 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000001040 /* MLeaksFinder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MLeaksFinder-prefix.pch"; sourceTree = "<group>"; };
+		000000001050 /* MLeaksFinder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MLeaksFinder-dummy.m"; sourceTree = "<group>"; };
+		0000000010B0 /* OOMDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OOMDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0000000014D0 /* OOMDetector.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OOMDetector.xcconfig; sourceTree = "<group>"; };
+		0000000014E0 /* OOMDetector.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OOMDetector.modulemap; sourceTree = "<group>"; };
+		0000000014F0 /* OOMDetector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OOMDetector-umbrella.h"; sourceTree = "<group>"; };
+		000000001510 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000001520 /* OOMDetector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OOMDetector-prefix.pch"; sourceTree = "<group>"; };
+		000000001530 /* OOMDetector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OOMDetector-dummy.m"; sourceTree = "<group>"; };
+		000000001590 /* PagingMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PagingMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000001660 /* PagingMenuController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagingMenuController.xcconfig; sourceTree = "<group>"; };
+		000000001670 /* PagingMenuController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PagingMenuController.modulemap; sourceTree = "<group>"; };
+		000000001680 /* PagingMenuController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagingMenuController-umbrella.h"; sourceTree = "<group>"; };
+		0000000016B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0000000016C0 /* PagingMenuController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagingMenuController-prefix.pch"; sourceTree = "<group>"; };
+		0000000016D0 /* PagingMenuController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PagingMenuController-dummy.m"; sourceTree = "<group>"; };
+		000000001730 /* fishhook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = fishhook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0000000017B0 /* fishhook.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fishhook.xcconfig; sourceTree = "<group>"; };
+		0000000017C0 /* fishhook.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = fishhook.modulemap; sourceTree = "<group>"; };
+		0000000017D0 /* fishhook-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fishhook-umbrella.h"; sourceTree = "<group>"; };
+		0000000017F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000001800 /* fishhook-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fishhook-prefix.pch"; sourceTree = "<group>"; };
+		000000001810 /* fishhook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "fishhook-dummy.m"; sourceTree = "<group>"; };
+		000000001870 /* Pods_Natural.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Natural.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0000000018C0 /* Pods-Natural.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Natural.release.xcconfig"; sourceTree = "<group>"; };
+		0000000018D0 /* Pods-Natural.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Natural.debug.xcconfig"; sourceTree = "<group>"; };
+		0000000018E0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0000000018F0 /* Pods-Natural.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Natural.modulemap"; sourceTree = "<group>"; };
+		000000001900 /* Pods-Natural-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Natural-umbrella.h"; sourceTree = "<group>"; };
+		000000001930 /* Pods-Natural-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Natural-frameworks.sh"; sourceTree = "<group>"; };
+		000000001940 /* Pods-Natural-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Natural-resources.sh"; sourceTree = "<group>"; };
+		000000001950 /* Pods-Natural-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Natural-acknowledgements.plist"; sourceTree = "<group>"; };
+		000000001960 /* Pods-Natural-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Natural-acknowledgements.markdown"; sourceTree = "<group>"; };
+		000000001970 /* Pods-Natural-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Natural-dummy.m"; sourceTree = "<group>"; };
+		000000001990 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		0000000019B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		000000001A30 /* FBRetainCycleDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBRetainCycleDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000001A90 /* fishhook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = fishhook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000A30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000019A0 /* CoreGraphics.framework in Frameworks */,
+				000000000A60 /* Foundation.framework in Frameworks */,
+				0000000019C0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000E40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000001A40 /* FBRetainCycleDetector.framework in Frameworks */,
+				000000000E50 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000010D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000001AA0 /* fishhook.framework in Frameworks */,
+				0000000010E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000015B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000015C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000001750 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000001760 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000001890 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000018A0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000010 = {
+			isa = PBXGroup;
+			children = (
+				000000000100 /* Podfile */,
+				000000000060 /* Frameworks */,
+				000000000080 /* Pods */,
+				000000000020 /* Products */,
+				000000000070 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000020 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000A10 /* FBRetainCycleDetector.framework */,
+				000000001730 /* fishhook.framework */,
+				000000000E20 /* MLeaksFinder.framework */,
+				0000000010B0 /* OOMDetector.framework */,
+				000000001590 /* PagingMenuController.framework */,
+				000000001870 /* Pods_Natural.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000060 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				000000001A30 /* FBRetainCycleDetector.framework */,
+				000000001A90 /* fishhook.framework */,
+				000000000A40 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		000000000070 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0000000018B0 /* Pods-Natural */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		000000000080 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0000000000A0 /* FBRetainCycleDetector */,
+				0000000000F0 /* fishhook */,
+				0000000000B0 /* MLeaksFinder */,
+				0000000000C0 /* OOMDetector */,
+				0000000000D0 /* PagingMenuController */,
+				0000000000E0 /* Reveal-SDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0000000000A0 /* FBRetainCycleDetector */ = {
+			isa = PBXGroup;
+			children = (
+				000000000310 /* BaseType.h */,
+				000000000130 /* FBAssociationManager.h */,
+				000000000140 /* FBAssociationManager.mm */,
+				000000000150 /* FBAssociationManager+Internal.h */,
+				000000000280 /* FBBlockInterface.h */,
+				000000000290 /* FBBlockStrongLayout.h */,
+				0000000002A0 /* FBBlockStrongLayout.m */,
+				0000000002B0 /* FBBlockStrongRelationDetector.h */,
+				0000000002C0 /* FBBlockStrongRelationDetector.m */,
+				0000000002D0 /* FBClassStrongLayout.h */,
+				0000000002E0 /* FBClassStrongLayout.mm */,
+				0000000002F0 /* FBClassStrongLayoutHelpers.h */,
+				000000000300 /* FBClassStrongLayoutHelpers.m */,
+				000000000370 /* FBIvarReference.h */,
+				000000000380 /* FBIvarReference.m */,
+				000000000160 /* FBNodeEnumerator.h */,
+				000000000170 /* FBNodeEnumerator.mm */,
+				0000000001D0 /* FBObjectGraphConfiguration.h */,
+				0000000001E0 /* FBObjectGraphConfiguration.m */,
+				000000000390 /* FBObjectInStructReference.h */,
+				0000000003A0 /* FBObjectInStructReference.m */,
+				0000000001F0 /* FBObjectiveCBlock.h */,
+				000000000200 /* FBObjectiveCBlock.m */,
+				000000000210 /* FBObjectiveCGraphElement.h */,
+				000000000220 /* FBObjectiveCGraphElement.mm */,
+				000000000250 /* FBObjectiveCGraphElement+Internal.h */,
+				000000000260 /* FBObjectiveCNSCFTimer.h */,
+				000000000270 /* FBObjectiveCNSCFTimer.mm */,
+				000000000230 /* FBObjectiveCObject.h */,
+				000000000240 /* FBObjectiveCObject.m */,
+				0000000003B0 /* FBObjectReference.h */,
+				000000000190 /* FBRetainCycleDetector.h */,
+				0000000001A0 /* FBRetainCycleDetector.mm */,
+				000000000180 /* FBRetainCycleDetector+Internal.h */,
+				000000000110 /* FBRetainCycleUtils.h */,
+				000000000120 /* FBRetainCycleUtils.m */,
+				0000000001B0 /* FBStandardGraphEdgeFilters.h */,
+				0000000001C0 /* FBStandardGraphEdgeFilters.mm */,
+				000000000320 /* FBStructEncodingParser.h */,
+				000000000330 /* FBStructEncodingParser.mm */,
+				0000000003C0 /* rcd_fishhook.c */,
+				0000000003D0 /* rcd_fishhook.h */,
+				000000000340 /* Struct.h */,
+				000000000350 /* Struct.mm */,
+				000000000360 /* Type.h */,
+				000000000D50 /* Support Files */,
+			);
+			path = FBRetainCycleDetector;
+			sourceTree = "<group>";
+		};
+		0000000000B0 /* MLeaksFinder */ = {
+			isa = PBXGroup;
+			children = (
+				0000000003E0 /* MLeakedObjectProxy.h */,
+				0000000003F0 /* MLeakedObjectProxy.m */,
+				000000000400 /* MLeaksFinder.h */,
+				000000000410 /* MLeaksMessenger.h */,
+				000000000420 /* MLeaksMessenger.m */,
+				000000000430 /* NSObject+MemoryLeak.h */,
+				000000000440 /* NSObject+MemoryLeak.m */,
+				000000000450 /* UIApplication+MemoryLeak.h */,
+				000000000460 /* UIApplication+MemoryLeak.m */,
+				000000000470 /* UINavigationController+MemoryLeak.h */,
+				000000000480 /* UINavigationController+MemoryLeak.m */,
+				000000000490 /* UIPageViewController+MemoryLeak.h */,
+				0000000004A0 /* UIPageViewController+MemoryLeak.m */,
+				0000000004B0 /* UISplitViewController+MemoryLeak.h */,
+				0000000004C0 /* UISplitViewController+MemoryLeak.m */,
+				0000000004D0 /* UITabBarController+MemoryLeak.h */,
+				0000000004E0 /* UITabBarController+MemoryLeak.m */,
+				0000000004F0 /* UITouch+MemoryLeak.h */,
+				000000000500 /* UITouch+MemoryLeak.m */,
+				000000000510 /* UIView+MemoryLeak.h */,
+				000000000520 /* UIView+MemoryLeak.m */,
+				000000000530 /* UIViewController+MemoryLeak.h */,
+				000000000540 /* UIViewController+MemoryLeak.m */,
+				000000000FE0 /* Support Files */,
+			);
+			path = MLeaksFinder;
+			sourceTree = "<group>";
+		};
+		0000000000C0 /* OOMDetector */ = {
+			isa = PBXGroup;
+			children = (
+				000000000760 /* AllocationTracker.h */,
+				000000000770 /* AllocationTracker.mm */,
+				0000000005B0 /* CBaseHashmap.h */,
+				0000000005C0 /* CBaseHashmap.mm */,
+				0000000007F0 /* CHeapChecker.h */,
+				000000000800 /* CHeapChecker.mm */,
+				0000000007A0 /* CLeakChecker.h */,
+				0000000007B0 /* CLeakChecker.mm */,
+				0000000008B0 /* CLeakedHashmap.h */,
+				0000000008C0 /* CLeakedHashmap.mm */,
+				000000000780 /* CMallocHook.h */,
+				000000000790 /* CMallocHook.mm */,
+				000000000810 /* CMemoryChecker.h */,
+				000000000820 /* CMemoryChecker.mm */,
+				000000000890 /* CObjcFilter.h */,
+				0000000008A0 /* CObjcFilter.mm */,
+				000000000570 /* CommonMallocLogger.h */,
+				000000000580 /* CommonMallocLogger.mm */,
+				0000000006D0 /* COOMDetector.h */,
+				0000000006E0 /* COOMDetector.mm */,
+				0000000005D0 /* CPtrsHashmap.h */,
+				0000000005E0 /* CPtrsHashmap.mm */,
+				000000000830 /* CRegisterChecker.h */,
+				000000000840 /* CRegisterChecker.mm */,
+				000000000850 /* CSegmentChecker.h */,
+				000000000860 /* CSegmentChecker.mm */,
+				000000000870 /* CStackChecker.h */,
+				000000000880 /* CStackChecker.mm */,
+				000000000590 /* CStackHelper.h */,
+				0000000005A0 /* CStackHelper.mm */,
+				0000000005F0 /* CStacksHashmap.h */,
+				000000000600 /* CStacksHashmap.mm */,
+				0000000008D0 /* CThreadTrackingHashmap.h */,
+				0000000008E0 /* CThreadTrackingHashmap.mm */,
+				000000000690 /* HighSpeedLogger.h */,
+				0000000006A0 /* HighSpeedLogger.mm */,
+				000000000550 /* libOOMDetector.h */,
+				000000000700 /* MemoryIndicator.h */,
+				000000000710 /* MemoryIndicator.m */,
+				000000000670 /* OOMDetector.h */,
+				0000000006F0 /* OOMDetector.mm */,
+				0000000006B0 /* OOMDetectorLogger.h */,
+				0000000006C0 /* OOMDetectorLogger.mm */,
+				000000000720 /* OOMMemoryStackTracker.h */,
+				000000000730 /* OOMMemoryStackTracker.mm */,
+				000000000740 /* OOMStatisticsInfoCenter.h */,
+				000000000750 /* OOMStatisticsInfoCenter.mm */,
+				000000000680 /* QQLeakChecker.h */,
+				0000000007C0 /* QQLeakChecker.mm */,
+				000000000610 /* QQLeakDataUploadCenter.h */,
+				000000000620 /* QQLeakDataUploadCenter.mm */,
+				000000000630 /* QQLeakDeviceInfo.h */,
+				000000000640 /* QQLeakDeviceInfo.m */,
+				000000000650 /* QQLeakFileUploadCenter.h */,
+				000000000660 /* QQLeakFileUploadCenter.mm */,
+				0000000007D0 /* QQLeakMallocStackTracker.h */,
+				0000000007E0 /* QQLeakMallocStackTracker.mm */,
+				000000000560 /* QQLeakPredefines.h */,
+				0000000009B0 /* Resources */,
+				0000000014C0 /* Support Files */,
+			);
+			path = OOMDetector;
+			sourceTree = "<group>";
+		};
+		0000000000D0 /* PagingMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				0000000008F0 /* MenuItemView.swift */,
+				000000000930 /* MenuItemViewCustomizable.swift */,
+				000000000900 /* MenuView.swift */,
+				000000000940 /* MenuViewCustomizable.swift */,
+				000000000950 /* Pagable.swift */,
+				000000000910 /* PagingMenuController.swift */,
+				000000000960 /* PagingMenuControllerCustomizable.swift */,
+				000000000920 /* PagingViewController.swift */,
+				000000001650 /* Support Files */,
+			);
+			path = PagingMenuController;
+			sourceTree = "<group>";
+		};
+		0000000000E0 /* Reveal-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				000000000990 /* Frameworks */,
+			);
+			path = "Reveal-SDK";
+			sourceTree = "<group>";
+		};
+		0000000000F0 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				000000000970 /* fishhook.c */,
+				000000000980 /* fishhook.h */,
+				0000000017A0 /* Support Files */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+		000000000990 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0000000009A0 /* RevealServer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0000000009B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0000000009C0 /* oomgif.gif */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		000000000A40 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				000000001990 /* CoreGraphics.framework */,
+				000000000A50 /* Foundation.framework */,
+				0000000019B0 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		000000000D50 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				000000000D70 /* FBRetainCycleDetector.modulemap */,
+				000000000D60 /* FBRetainCycleDetector.xcconfig */,
+				000000000DC0 /* FBRetainCycleDetector-dummy.m */,
+				000000000DB0 /* FBRetainCycleDetector-prefix.pch */,
+				000000000D80 /* FBRetainCycleDetector-umbrella.h */,
+				000000000DA0 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FBRetainCycleDetector";
+			sourceTree = "<group>";
+		};
+		000000000FE0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				000000001030 /* Info.plist */,
+				000000001000 /* MLeaksFinder.modulemap */,
+				000000000FF0 /* MLeaksFinder.xcconfig */,
+				000000001050 /* MLeaksFinder-dummy.m */,
+				000000001040 /* MLeaksFinder-prefix.pch */,
+				000000001010 /* MLeaksFinder-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MLeaksFinder";
+			sourceTree = "<group>";
+		};
+		0000000014C0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				000000001510 /* Info.plist */,
+				0000000014E0 /* OOMDetector.modulemap */,
+				0000000014D0 /* OOMDetector.xcconfig */,
+				000000001530 /* OOMDetector-dummy.m */,
+				000000001520 /* OOMDetector-prefix.pch */,
+				0000000014F0 /* OOMDetector-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OOMDetector";
+			sourceTree = "<group>";
+		};
+		000000001650 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0000000016B0 /* Info.plist */,
+				000000001670 /* PagingMenuController.modulemap */,
+				000000001660 /* PagingMenuController.xcconfig */,
+				0000000016D0 /* PagingMenuController-dummy.m */,
+				0000000016C0 /* PagingMenuController-prefix.pch */,
+				000000001680 /* PagingMenuController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PagingMenuController";
+			sourceTree = "<group>";
+		};
+		0000000017A0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0000000017C0 /* fishhook.modulemap */,
+				0000000017B0 /* fishhook.xcconfig */,
+				000000001810 /* fishhook-dummy.m */,
+				000000001800 /* fishhook-prefix.pch */,
+				0000000017D0 /* fishhook-umbrella.h */,
+				0000000017F0 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/fishhook";
+			sourceTree = "<group>";
+		};
+		0000000018B0 /* Pods-Natural */ = {
+			isa = PBXGroup;
+			children = (
+				0000000018E0 /* Info.plist */,
+				0000000018F0 /* Pods-Natural.modulemap */,
+				000000001960 /* Pods-Natural-acknowledgements.markdown */,
+				000000001950 /* Pods-Natural-acknowledgements.plist */,
+				000000001970 /* Pods-Natural-dummy.m */,
+				000000001930 /* Pods-Natural-frameworks.sh */,
+				000000001940 /* Pods-Natural-resources.sh */,
+				000000001900 /* Pods-Natural-umbrella.h */,
+				0000000018D0 /* Pods-Natural.debug.xcconfig */,
+				0000000018C0 /* Pods-Natural.release.xcconfig */,
+			);
+			name = "Pods-Natural";
+			path = "Target Support Files/Pods-Natural";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		000000000BA0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000CD0 /* BaseType.h in Headers */,
+				000000000BD0 /* FBAssociationManager+Internal.h in Headers */,
+				000000000BC0 /* FBAssociationManager.h in Headers */,
+				000000000C80 /* FBBlockInterface.h in Headers */,
+				000000000C90 /* FBBlockStrongLayout.h in Headers */,
+				000000000CA0 /* FBBlockStrongRelationDetector.h in Headers */,
+				000000000CB0 /* FBClassStrongLayout.h in Headers */,
+				000000000CC0 /* FBClassStrongLayoutHelpers.h in Headers */,
+				000000000D10 /* FBIvarReference.h in Headers */,
+				000000000BE0 /* FBNodeEnumerator.h in Headers */,
+				000000000C20 /* FBObjectGraphConfiguration.h in Headers */,
+				000000000D20 /* FBObjectInStructReference.h in Headers */,
+				000000000C30 /* FBObjectiveCBlock.h in Headers */,
+				000000000C60 /* FBObjectiveCGraphElement+Internal.h in Headers */,
+				000000000C40 /* FBObjectiveCGraphElement.h in Headers */,
+				000000000C70 /* FBObjectiveCNSCFTimer.h in Headers */,
+				000000000C50 /* FBObjectiveCObject.h in Headers */,
+				000000000D30 /* FBObjectReference.h in Headers */,
+				000000000BF0 /* FBRetainCycleDetector+Internal.h in Headers */,
+				000000000D90 /* FBRetainCycleDetector-umbrella.h in Headers */,
+				000000000C00 /* FBRetainCycleDetector.h in Headers */,
+				000000000BB0 /* FBRetainCycleUtils.h in Headers */,
+				000000000C10 /* FBStandardGraphEdgeFilters.h in Headers */,
+				000000000CE0 /* FBStructEncodingParser.h in Headers */,
+				000000000D40 /* rcd_fishhook.h in Headers */,
+				000000000CF0 /* Struct.h in Headers */,
+				000000000D00 /* Type.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000F10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000F20 /* MLeakedObjectProxy.h in Headers */,
+				000000001020 /* MLeaksFinder-umbrella.h in Headers */,
+				000000000F30 /* MLeaksFinder.h in Headers */,
+				000000000F40 /* MLeaksMessenger.h in Headers */,
+				000000000F50 /* NSObject+MemoryLeak.h in Headers */,
+				000000000F60 /* UIApplication+MemoryLeak.h in Headers */,
+				000000000F70 /* UINavigationController+MemoryLeak.h in Headers */,
+				000000000F80 /* UIPageViewController+MemoryLeak.h in Headers */,
+				000000000F90 /* UISplitViewController+MemoryLeak.h in Headers */,
+				000000000FA0 /* UITabBarController+MemoryLeak.h in Headers */,
+				000000000FB0 /* UITouch+MemoryLeak.h in Headers */,
+				000000000FC0 /* UIView+MemoryLeak.h in Headers */,
+				000000000FD0 /* UIViewController+MemoryLeak.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000012B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000013E0 /* AllocationTracker.h in Headers */,
+				000000001300 /* CBaseHashmap.h in Headers */,
+				000000001420 /* CHeapChecker.h in Headers */,
+				000000001400 /* CLeakChecker.h in Headers */,
+				000000001480 /* CLeakedHashmap.h in Headers */,
+				0000000013F0 /* CMallocHook.h in Headers */,
+				000000001430 /* CMemoryChecker.h in Headers */,
+				000000001470 /* CObjcFilter.h in Headers */,
+				0000000012E0 /* CommonMallocLogger.h in Headers */,
+				0000000013A0 /* COOMDetector.h in Headers */,
+				000000001310 /* CPtrsHashmap.h in Headers */,
+				000000001440 /* CRegisterChecker.h in Headers */,
+				000000001450 /* CSegmentChecker.h in Headers */,
+				000000001460 /* CStackChecker.h in Headers */,
+				0000000012F0 /* CStackHelper.h in Headers */,
+				000000001320 /* CStacksHashmap.h in Headers */,
+				000000001490 /* CThreadTrackingHashmap.h in Headers */,
+				000000001380 /* HighSpeedLogger.h in Headers */,
+				0000000012C0 /* libOOMDetector.h in Headers */,
+				0000000013B0 /* MemoryIndicator.h in Headers */,
+				000000001500 /* OOMDetector-umbrella.h in Headers */,
+				000000001360 /* OOMDetector.h in Headers */,
+				000000001390 /* OOMDetectorLogger.h in Headers */,
+				0000000013C0 /* OOMMemoryStackTracker.h in Headers */,
+				0000000013D0 /* OOMStatisticsInfoCenter.h in Headers */,
+				000000001370 /* QQLeakChecker.h in Headers */,
+				000000001330 /* QQLeakDataUploadCenter.h in Headers */,
+				000000001340 /* QQLeakDeviceInfo.h in Headers */,
+				000000001350 /* QQLeakFileUploadCenter.h in Headers */,
+				000000001410 /* QQLeakMallocStackTracker.h in Headers */,
+				0000000012D0 /* QQLeakPredefines.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000001690 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000016A0 /* PagingMenuController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000001780 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000017E0 /* fishhook-umbrella.h in Headers */,
+				000000001790 /* fishhook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000001910 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000001920 /* Pods-Natural-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0000000009D0 /* FBRetainCycleDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0000000009E0 /* Build configuration list for PBXNativeTarget "FBRetainCycleDetector" */;
+			buildPhases = (
+				000000000A20 /* Sources */,
+				000000000A30 /* Frameworks */,
+				000000000BA0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBRetainCycleDetector;
+			productName = FBRetainCycleDetector;
+			productReference = 000000000A10 /* FBRetainCycleDetector.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		000000000DE0 /* MLeaksFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000DF0 /* Build configuration list for PBXNativeTarget "MLeaksFinder" */;
+			buildPhases = (
+				000000000E30 /* Sources */,
+				000000000E40 /* Frameworks */,
+				000000000F10 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000000001A20 /* PBXTargetDependency */,
+			);
+			name = MLeaksFinder;
+			productName = MLeaksFinder;
+			productReference = 000000000E20 /* MLeaksFinder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		000000001070 /* OOMDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000001080 /* Build configuration list for PBXNativeTarget "OOMDetector" */;
+			buildPhases = (
+				0000000010C0 /* Sources */,
+				0000000010D0 /* Frameworks */,
+				0000000012B0 /* Headers */,
+				0000000014A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000000001A80 /* PBXTargetDependency */,
+			);
+			name = OOMDetector;
+			productName = OOMDetector;
+			productReference = 0000000010B0 /* OOMDetector.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		000000001550 /* PagingMenuController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000001560 /* Build configuration list for PBXNativeTarget "PagingMenuController" */;
+			buildPhases = (
+				0000000015A0 /* Sources */,
+				0000000015B0 /* Frameworks */,
+				000000001690 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PagingMenuController;
+			productName = PagingMenuController;
+			productReference = 000000001590 /* PagingMenuController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0000000016F0 /* fishhook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000001700 /* Build configuration list for PBXNativeTarget "fishhook" */;
+			buildPhases = (
+				000000001740 /* Sources */,
+				000000001750 /* Frameworks */,
+				000000001780 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fishhook;
+			productName = fishhook;
+			productReference = 000000001730 /* fishhook.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		000000001830 /* Pods-Natural */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000001840 /* Build configuration list for PBXNativeTarget "Pods-Natural" */;
+			buildPhases = (
+				000000001880 /* Sources */,
+				000000001890 /* Frameworks */,
+				000000001910 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0000000019E0 /* PBXTargetDependency */,
+				000000001A00 /* PBXTargetDependency */,
+				000000001A60 /* PBXTargetDependency */,
+				000000001AC0 /* PBXTargetDependency */,
+				000000001AE0 /* PBXTargetDependency */,
+			);
+			name = "Pods-Natural";
+			productName = "Pods-Natural";
+			productReference = 000000001870 /* Pods_Natural.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0940;
+			};
+			buildConfigurationList = 000000000030 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 000000000010;
+			productRefGroup = 000000000020 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0000000009D0 /* FBRetainCycleDetector */,
+				0000000016F0 /* fishhook */,
+				000000000DE0 /* MLeaksFinder */,
+				000000001070 /* OOMDetector */,
+				000000001550 /* PagingMenuController */,
+				000000001830 /* Pods-Natural */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0000000014A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000014B0 /* oomgif.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000A20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000B60 /* FBAssociationManager.mm in Sources */,
+				000000000B70 /* FBBlockStrongLayout.m in Sources */,
+				000000000B80 /* FBBlockStrongRelationDetector.m in Sources */,
+				000000000B00 /* FBClassStrongLayout.mm in Sources */,
+				000000000B90 /* FBClassStrongLayoutHelpers.m in Sources */,
+				000000000B30 /* FBIvarReference.m in Sources */,
+				000000000A70 /* FBNodeEnumerator.mm in Sources */,
+				000000000AB0 /* FBObjectGraphConfiguration.m in Sources */,
+				000000000B40 /* FBObjectInStructReference.m in Sources */,
+				000000000AC0 /* FBObjectiveCBlock.m in Sources */,
+				000000000AD0 /* FBObjectiveCGraphElement.mm in Sources */,
+				000000000AF0 /* FBObjectiveCNSCFTimer.mm in Sources */,
+				000000000AE0 /* FBObjectiveCObject.m in Sources */,
+				000000000DD0 /* FBRetainCycleDetector-dummy.m in Sources */,
+				000000000A80 /* FBRetainCycleDetector.mm in Sources */,
+				000000000A90 /* FBRetainCycleUtils.m in Sources */,
+				000000000AA0 /* FBStandardGraphEdgeFilters.mm in Sources */,
+				000000000B10 /* FBStructEncodingParser.mm in Sources */,
+				000000000B50 /* rcd_fishhook.c in Sources */,
+				000000000B20 /* Struct.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000E30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000E60 /* MLeakedObjectProxy.m in Sources */,
+				000000001060 /* MLeaksFinder-dummy.m in Sources */,
+				000000000E70 /* MLeaksMessenger.m in Sources */,
+				000000000E80 /* NSObject+MemoryLeak.m in Sources */,
+				000000000E90 /* UIApplication+MemoryLeak.m in Sources */,
+				000000000EA0 /* UINavigationController+MemoryLeak.m in Sources */,
+				000000000EB0 /* UIPageViewController+MemoryLeak.m in Sources */,
+				000000000EC0 /* UISplitViewController+MemoryLeak.m in Sources */,
+				000000000ED0 /* UITabBarController+MemoryLeak.m in Sources */,
+				000000000EE0 /* UITouch+MemoryLeak.m in Sources */,
+				000000000EF0 /* UIView+MemoryLeak.m in Sources */,
+				000000000F00 /* UIViewController+MemoryLeak.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000010C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000011E0 /* AllocationTracker.mm in Sources */,
+				000000001130 /* CBaseHashmap.mm in Sources */,
+				000000001230 /* CHeapChecker.mm in Sources */,
+				000000001200 /* CLeakChecker.mm in Sources */,
+				000000001290 /* CLeakedHashmap.mm in Sources */,
+				0000000011F0 /* CMallocHook.mm in Sources */,
+				000000001240 /* CMemoryChecker.mm in Sources */,
+				000000001280 /* CObjcFilter.mm in Sources */,
+				000000001110 /* CommonMallocLogger.mm in Sources */,
+				0000000011A0 /* COOMDetector.mm in Sources */,
+				000000001140 /* CPtrsHashmap.mm in Sources */,
+				000000001250 /* CRegisterChecker.mm in Sources */,
+				000000001260 /* CSegmentChecker.mm in Sources */,
+				000000001270 /* CStackChecker.mm in Sources */,
+				000000001120 /* CStackHelper.mm in Sources */,
+				000000001150 /* CStacksHashmap.mm in Sources */,
+				0000000012A0 /* CThreadTrackingHashmap.mm in Sources */,
+				000000001180 /* HighSpeedLogger.mm in Sources */,
+				000000001100 /* MemoryIndicator.m in Sources */,
+				000000001540 /* OOMDetector-dummy.m in Sources */,
+				0000000011B0 /* OOMDetector.mm in Sources */,
+				000000001190 /* OOMDetectorLogger.mm in Sources */,
+				0000000011C0 /* OOMMemoryStackTracker.mm in Sources */,
+				0000000011D0 /* OOMStatisticsInfoCenter.mm in Sources */,
+				000000001210 /* QQLeakChecker.mm in Sources */,
+				0000000010F0 /* QQLeakDataUploadCenter.mm in Sources */,
+				000000001160 /* QQLeakDeviceInfo.m in Sources */,
+				000000001170 /* QQLeakFileUploadCenter.mm in Sources */,
+				000000001220 /* QQLeakMallocStackTracker.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000015A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000015D0 /* MenuItemView.swift in Sources */,
+				000000001610 /* MenuItemViewCustomizable.swift in Sources */,
+				0000000015E0 /* MenuView.swift in Sources */,
+				000000001620 /* MenuViewCustomizable.swift in Sources */,
+				000000001630 /* Pagable.swift in Sources */,
+				0000000016E0 /* PagingMenuController-dummy.m in Sources */,
+				0000000015F0 /* PagingMenuController.swift in Sources */,
+				000000001640 /* PagingMenuControllerCustomizable.swift in Sources */,
+				000000001600 /* PagingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000001740 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000001820 /* fishhook-dummy.m in Sources */,
+				000000001770 /* fishhook.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000001880 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000001980 /* Pods-Natural-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0000000019E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBRetainCycleDetector;
+			target = 0000000009D0 /* FBRetainCycleDetector */;
+			targetProxy = 0000000019D0 /* PBXContainerItemProxy */;
+		};
+		000000001A00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MLeaksFinder;
+			target = 000000000DE0 /* MLeaksFinder */;
+			targetProxy = 0000000019F0 /* PBXContainerItemProxy */;
+		};
+		000000001A20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBRetainCycleDetector;
+			target = 0000000009D0 /* FBRetainCycleDetector */;
+			targetProxy = 000000001A10 /* PBXContainerItemProxy */;
+		};
+		000000001A60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OOMDetector;
+			target = 000000001070 /* OOMDetector */;
+			targetProxy = 000000001A50 /* PBXContainerItemProxy */;
+		};
+		000000001A80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fishhook;
+			target = 0000000016F0 /* fishhook */;
+			targetProxy = 000000001A70 /* PBXContainerItemProxy */;
+		};
+		000000001AC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PagingMenuController;
+			target = 000000001550 /* PagingMenuController */;
+			targetProxy = 000000001AB0 /* PBXContainerItemProxy */;
+		};
+		000000001AE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fishhook;
+			target = 0000000016F0 /* fishhook */;
+			targetProxy = 000000001AD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		000000000040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.1;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		000000000050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 4.1;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		0000000009F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000000D60 /* FBRetainCycleDetector.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBRetainCycleDetector/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector.modulemap";
+				PRODUCT_MODULE_NAME = FBRetainCycleDetector;
+				PRODUCT_NAME = FBRetainCycleDetector;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		000000000A00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000000D60 /* FBRetainCycleDetector.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBRetainCycleDetector/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector.modulemap";
+				PRODUCT_MODULE_NAME = FBRetainCycleDetector;
+				PRODUCT_NAME = FBRetainCycleDetector;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		000000000E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000000FF0 /* MLeaksFinder.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MLeaksFinder/MLeaksFinder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MLeaksFinder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MLeaksFinder/MLeaksFinder.modulemap";
+				PRODUCT_MODULE_NAME = MLeaksFinder;
+				PRODUCT_NAME = MLeaksFinder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		000000000E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000000FF0 /* MLeaksFinder.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MLeaksFinder/MLeaksFinder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MLeaksFinder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MLeaksFinder/MLeaksFinder.modulemap";
+				PRODUCT_MODULE_NAME = MLeaksFinder;
+				PRODUCT_NAME = MLeaksFinder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		000000001090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0000000014D0 /* OOMDetector.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OOMDetector/OOMDetector-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OOMDetector/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OOMDetector/OOMDetector.modulemap";
+				PRODUCT_MODULE_NAME = OOMDetector;
+				PRODUCT_NAME = OOMDetector;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0000000010A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0000000014D0 /* OOMDetector.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OOMDetector/OOMDetector-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OOMDetector/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OOMDetector/OOMDetector.modulemap";
+				PRODUCT_MODULE_NAME = OOMDetector;
+				PRODUCT_NAME = OOMDetector;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		000000001570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000001660 /* PagingMenuController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PagingMenuController/PagingMenuController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PagingMenuController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PagingMenuController/PagingMenuController.modulemap";
+				PRODUCT_MODULE_NAME = PagingMenuController;
+				PRODUCT_NAME = PagingMenuController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		000000001580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000001660 /* PagingMenuController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PagingMenuController/PagingMenuController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PagingMenuController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PagingMenuController/PagingMenuController.modulemap";
+				PRODUCT_MODULE_NAME = PagingMenuController;
+				PRODUCT_NAME = PagingMenuController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		000000001710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0000000017B0 /* fishhook.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/fishhook/fishhook-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/fishhook/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/fishhook/fishhook.modulemap";
+				PRODUCT_MODULE_NAME = fishhook;
+				PRODUCT_NAME = fishhook;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		000000001720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0000000017B0 /* fishhook.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/fishhook/fishhook-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/fishhook/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/fishhook/fishhook.modulemap";
+				PRODUCT_MODULE_NAME = fishhook;
+				PRODUCT_NAME = fishhook;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		000000001850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0000000018C0 /* Pods-Natural.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Natural/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Natural/Pods-Natural.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		000000001860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0000000018D0 /* Pods-Natural.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Natural/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Natural/Pods-Natural.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000030 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000040 /* Debug */,
+				000000000050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0000000009E0 /* Build configuration list for PBXNativeTarget "FBRetainCycleDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000A00 /* Debug */,
+				0000000009F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000DF0 /* Build configuration list for PBXNativeTarget "MLeaksFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000E10 /* Debug */,
+				000000000E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000001080 /* Build configuration list for PBXNativeTarget "OOMDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0000000010A0 /* Debug */,
+				000000001090 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000001560 /* Build configuration list for PBXNativeTarget "PagingMenuController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000001580 /* Debug */,
+				000000001570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000001700 /* Build configuration list for PBXNativeTarget "fishhook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000001720 /* Debug */,
+				000000001710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000001840 /* Build configuration list for PBXNativeTarget "Pods-Natural" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000001860 /* Debug */,
+				000000001850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000 /* Project object */;
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		919D357A72066E78C820F793 /* Pods_Natural.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9640F3B7772B6EBDD0BAA5 /* Pods_Natural.framework */; };
 		934A74F320E13E5800837E1E /* beach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 934A74ED20E13E5800837E1E /* beach.mp3 */; };
 		934A74F420E13E5800837E1E /* stove_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 934A74EE20E13E5800837E1E /* stove_fire.mp3 */; };
 		934A74F520E13E5800837E1E /* summer_night.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 934A74EF20E13E5800837E1E /* summer_night.mp3 */; };
@@ -23,16 +24,6 @@
 		93EE47F120DFCBD6007E0593 /* PublicControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE47F020DFCBD6007E0593 /* PublicControl.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		934A74FD20E145E300837E1E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 934A74F920E145E300837E1E /* PagingMenuController.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ECE530671B6DEB18001CF201;
-			remoteInfo = PagingMenuController;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		93AC9A8120DE23A000FCA562 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -47,13 +38,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		09170D66C6C7BB0D90F4555C /* Pods-Natural.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Natural.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Natural/Pods-Natural.debug.xcconfig"; sourceTree = "<group>"; };
+		1B9640F3B7772B6EBDD0BAA5 /* Pods_Natural.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Natural.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A82E94E084B508D8152DED /* Pods-Natural.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Natural.release.xcconfig"; path = "Pods/Target Support Files/Pods-Natural/Pods-Natural.release.xcconfig"; sourceTree = "<group>"; };
 		934A74ED20E13E5800837E1E /* beach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beach.mp3; sourceTree = "<group>"; };
 		934A74EE20E13E5800837E1E /* stove_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stove_fire.mp3; sourceTree = "<group>"; };
 		934A74EF20E13E5800837E1E /* summer_night.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = summer_night.mp3; sourceTree = "<group>"; };
 		934A74F020E13E5800837E1E /* numberpicker_value_change.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = numberpicker_value_change.ogg; sourceTree = "<group>"; };
 		934A74F120E13E5800837E1E /* forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = forest.mp3; sourceTree = "<group>"; };
 		934A74F220E13E5800837E1E /* spring_rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spring_rain.mp3; sourceTree = "<group>"; };
-		934A74F920E145E300837E1E /* PagingMenuController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PagingMenuController.xcodeproj; path = ../PagingMenuControllerForSwift4/PagingMenuController.xcodeproj; sourceTree = "<group>"; };
 		93AC9A6220DE229D00FCA562 /* Natural.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Natural.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AC9A6520DE229D00FCA562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93AC9A6720DE229D00FCA562 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,26 +64,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				919D357A72066E78C820F793 /* Pods_Natural.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		934A74FA20E145E300837E1E /* Products */ = {
+		4A735E0D8E27C80D54115A8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				934A74FE20E145E300837E1E /* PagingMenuController.framework */,
+				1B9640F3B7772B6EBDD0BAA5 /* Pods_Natural.framework */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		93AC9A5920DE229D00FCA562 = {
 			isa = PBXGroup;
 			children = (
-				934A74F920E145E300837E1E /* PagingMenuController.xcodeproj */,
 				93AC9A6420DE229D00FCA562 /* Natural */,
 				93AC9A6320DE229D00FCA562 /* Products */,
+				9E698427E1390BF0163F4291 /* Pods */,
+				4A735E0D8E27C80D54115A8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +127,15 @@
 			path = sound;
 			sourceTree = "<group>";
 		};
+		9E698427E1390BF0163F4291 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09170D66C6C7BB0D90F4555C /* Pods-Natural.debug.xcconfig */,
+				43A82E94E084B508D8152DED /* Pods-Natural.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,10 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93AC9A7420DE229F00FCA562 /* Build configuration list for PBXNativeTarget "Natural" */;
 			buildPhases = (
+				714487BD7C6FD800646FCCB8 /* [CP] Check Pods Manifest.lock */,
 				93AC9A5E20DE229D00FCA562 /* Sources */,
 				93AC9A5F20DE229D00FCA562 /* Frameworks */,
 				93AC9A6020DE229D00FCA562 /* Resources */,
 				93AC9A8120DE23A000FCA562 /* Embed Frameworks */,
+				C7FCCE7A88C5661CB15437CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,28 +185,12 @@
 			mainGroup = 93AC9A5920DE229D00FCA562;
 			productRefGroup = 93AC9A6320DE229D00FCA562 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 934A74FA20E145E300837E1E /* Products */;
-					ProjectRef = 934A74F920E145E300837E1E /* PagingMenuController.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				93AC9A6120DE229D00FCA562 /* Natural */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		934A74FE20E145E300837E1E /* PagingMenuController.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PagingMenuController.framework;
-			remoteRef = 934A74FD20E145E300837E1E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		93AC9A6020DE229D00FCA562 /* Resources */ = {
@@ -220,6 +210,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		714487BD7C6FD800646FCCB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Natural-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7FCCE7A88C5661CB15437CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Natural/Pods-Natural-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework",
+				"${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework",
+				"${BUILT_PRODUCTS_DIR}/OOMDetector/OOMDetector.framework",
+				"${BUILT_PRODUCTS_DIR}/PagingMenuController/PagingMenuController.framework",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-4/iOS/RevealServer.framework",
+				"${BUILT_PRODUCTS_DIR}/fishhook/fishhook.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBRetainCycleDetector.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLeaksFinder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OOMDetector.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PagingMenuController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/fishhook.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Natural/Pods-Natural-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		93AC9A5E20DE229D00FCA562 /* Sources */ = {
@@ -372,6 +411,7 @@
 		};
 		93AC9A7520DE229F00FCA562 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09170D66C6C7BB0D90F4555C /* Pods-Natural.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -391,6 +431,7 @@
 		};
 		93AC9A7620DE229F00FCA562 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43A82E94E084B508D8152DED /* Pods-Natural.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

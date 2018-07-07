@@ -30,12 +30,13 @@ class Page1: UIViewController {
         playerItem = AVPlayerItem(url: url)
         player = AVPlayer(playerItem: playerItem!)
         
-        
         //下面是这个界面的背景图
         let img = UIImage(named: "pic_beach")
         let imgView = UIImageView(image: img)
+        imgView.frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height)
+        imgView.contentMode = UIViewContentMode.scaleAspectFill
         self.view.addSubview(imgView)
-        view.backgroundColor = UIColor.cyan
+        view.backgroundColor = UIColor.black
         
         //下面是这个界面的文本相关 
 //        let textLabel = PublicLabel.mainLabel(<#T##PublicLabel#>)
@@ -43,15 +44,16 @@ class Page1: UIViewController {
         
         //下面是这个界面的按钮相关
         let playBtn = UIButton()
-        playBtn.frame = CGRect(x: 112, y: 360, width: 150, height: 50)
-        playBtn.layer.cornerRadius = 8
+        playBtn.frame.size = CGSize(width: 150, height: 50)
+        playBtn.center.x = self.view.bounds.width / 2
+        playBtn.center.y = self.view.bounds.height / 2
+        playBtn.layer.cornerRadius = 1
         playBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.center
-        playBtn.titleLabel?.font = UIFont.systemFont(ofSize:30)
+        playBtn.titleLabel?.font = UIFont.systemFont(ofSize:20)
         playBtn.setTitle("Play", for: .normal)
-        playBtn.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
+        playBtn.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
         playBtn.addTarget(self, action: #selector(tappedPlay(_:)), for: .touchUpInside)
         self.view.addSubview(playBtn)
-        
 
         // Do any additional setup after loading the view.
     }
@@ -85,7 +87,7 @@ class Page1: UIViewController {
     @objc func finishedPlaying(myNotification:NSNotification) {
         print("播放完毕!")
         let stopedPlayerItem: AVPlayerItem = myNotification.object as! AVPlayerItem
-        stopedPlayerItem.seek(to: kCMTimeZero)
+        stopedPlayerItem.seek(to: kCMTimeZero, completionHandler: nil)
     }
     
     override func didReceiveMemoryWarning() {
